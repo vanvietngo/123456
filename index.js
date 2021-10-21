@@ -19,13 +19,13 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())  // for parsing application/json
 
 
+
 app.use('/', router)
 app.use('/uploaded_files', express.static('uploaded_files'))
 //--
-
+console.log("")
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
-
 
